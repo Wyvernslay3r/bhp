@@ -1,0 +1,27 @@
+---
+#Using for quick testing of SSH Command Functionality. Start with the following command
+#      $ docker-compose -f docker-testing-containers/ssh_cmd_dockerconfig.yml up
+version: "2.1"
+services:
+  openssh-server:
+    image: lscr.io/linuxserver/openssh-server
+    container_name: openssh-server-docker-compose
+    hostname: openssh-server-docker-compose #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - PUBLIC_KEY=yourpublickey #optional
+      - PUBLIC_KEY_FILE=/path/to/file #optional
+      - PUBLIC_KEY_DIR=/path/to/directory/containing/_only_/pubkeys #optional
+      - PUBLIC_KEY_URL=https://github.com/username.keys #optional
+      - SUDO_ACCESS=false #optional
+      - PASSWORD_ACCESS=true #optional
+      - USER_PASSWORD=password #optional
+      - USER_PASSWORD_FILE=/path/to/file #optional
+      - USER_NAME=username #optional
+    volumes:
+      - /path/to/appdata/config:/config
+    ports:
+      - 2222:2222
+    restart: unless-stopped
