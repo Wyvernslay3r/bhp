@@ -1,10 +1,12 @@
 import argparse
+from ast import Str
 import socket
 import shlex
 import subprocess
 import sys
 import textwrap
 import threading
+from tokenize import String
 
 
 def execute(cmd):
@@ -21,6 +23,8 @@ class NetCat:
         Simple Netcat class - 
             Used to run specified commands/operations based on the arguments passed in during terminal based invocation. 
 
+            NOTE: For these commands to function, you need to hit ctrl+D indicating EOF. 
+
             Attached are Examples:
             Examples:
                 netcat.py -t 192.168.1.1 -p 5555 -l -c                      # Command Shell 
@@ -30,7 +34,7 @@ class NetCat:
                 netcat.py -t 192.168.1.108 -p 5555                          # Connect to Remote Server 
     '''
 
-    def __init__(self, args, buffer=None):
+    def __init__(self, args:Str, buffer=None):
         '''
             Init for Netcat Class
                 - Determines actions based on args, and buffer
@@ -105,7 +109,7 @@ class NetCat:
             )
             client_thread.start()
 
-    def handle(self, client_socket):
+    def handle(self, client_socket:socket):
         '''
             Used to define next steps based on passed in params. 
             it either 
@@ -160,7 +164,7 @@ if __name__ == '__main__':
         epilog=textwrap.dedent(''' Example:
             netcat.py -t 192.168.1.1 -p 5555 -l -c                      # Command Shell 
             netcat.py -t 192.168.1.1 -p 5555 -l -u=file.txt             # Upload to file 
-            netcat.py -t 192.168.1.1 -p 5555 -l -e=\ "cat /etc/passwd\" # Execute command 
+            netcat.py -t 192.168.1.1 -p 5555 -l -e=\ "cat /etc/passwd\"  # Execute command 
             echo 'ABCD' | ./netcat.py -t 192.168.1.1 -p 135             # Echo text to the specified server on port 135 
             netcat.py -t 192.168.1.108 -p 5555                          # Connect to Remote Server 
         '''))
@@ -176,7 +180,7 @@ if __name__ == '__main__':
     if args.listen:
         buffer = ''
     else:
-        buffer = sys.stdin.readline()
+        buffer = sys.stdin.read()
 
     nc = NetCat(args, buffer.encode())
     nc.run()
