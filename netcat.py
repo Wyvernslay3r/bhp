@@ -5,7 +5,6 @@ import subprocess
 import sys
 import textwrap
 import threading
-from urllib import response
 
 
 def execute(cmd):
@@ -79,11 +78,11 @@ class NetCat:
                     if recv_len < 4096:
                         break
 
-                    if response:
-                        print(response)
-                        buffer = input('> ')
-                        buffer += '\n'
-                        self.socket.send(buffer.encode())
+                if response:
+                    print(response)
+                    buffer = input('> ')
+                    buffer += '\n'
+                    self.socket.send(buffer.encode())
 
         except KeyboardInterrupt:
             print('User Terminated. Exiting. ')
