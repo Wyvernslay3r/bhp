@@ -8,3 +8,5 @@ class ICMP:
         self.sum = header[2]
         self.id = header[3]
         self.seq = header[4]
+
+        
