@@ -1,1 +1,369 @@
 Folder for chapter 3 of the black hat python book. 
+
+#Example Output from the ICMP Scanner
+
+
+Protocol: ICMP 192.168.1.1 -> 192.168.1.69
+Hosts Up: 192.168.1.1
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.53 -> 192.168.1.69
+Hosts Up: 192.168.1.53
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.58 -> 192.168.1.69
+Hosts Up: 192.168.1.58
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.77 -> 192.168.1.69
+Hosts Up: 192.168.1.77
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.156 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 255
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.52 -> 192.168.1.69
+Hosts Up: 192.168.1.52
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.25 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.146 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.37 -> 192.168.1.69
+Hosts Up: 192.168.1.37
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.106 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 255
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.6 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.51 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 255
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.244 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.205 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 255
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.35 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 3 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+Protocol: ICMP 192.168.1.69 -> 192.168.1.69
+Version: 4
+Header Length: 5 TTL: 64
+ICMP -> Type: 3 Code: 1 
+
+
+ User interrupted.
+
+
+Summary: Hosts on 192.168.1.0/24
+192.168.1.1
+192.168.1.37
+192.168.1.52
+192.168.1.53
+192.168.1.58
+192.168.1.69 *
+192.168.1.77
+
