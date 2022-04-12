@@ -20,7 +20,7 @@ def detect(srcdir = ROOT, targetdir=FACES, trainingdir=TRAIN):
             continue
 
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        training = os.path.join(trainingdir, 'haarcascade_frontalface_alt.xml')
+        training = os.path.join(trainingdir, 'haarcascade_frontalface_alt.xml') #XML Dataset found here - http://eclecti.cc/files/2008/03/haarcascade_frontalface_alt.xml
         cascade = cv2.CascadeClassifier(training)
 
         rects = cascade.detectMultiScale(gray, 1.3, 5)
