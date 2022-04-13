@@ -5,11 +5,9 @@ import requests
 
 url = 'https://nostarch.com'
 get_request = requests.get(url)
-content = get_request.content
+content = get_request.content #Bytes data type
 
 parser = etree.HTMLParser()
 content = etree.parse(BytesIO(content), parser=parser)
 for link in content.findall('//a'): #Looks for all anchor elements from within the parsed html
-    print(f"{link.get('href')}->{link.text}")
-
-    
+    print(f"{link.get('href')} \n\t-> {link.text}")
